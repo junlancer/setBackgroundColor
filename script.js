@@ -41,8 +41,8 @@ var whenReady = (function () {               //这个函数返回whenReady()函�
 whenReady(function () {
     var btns = document.querySelectorAll('div[class*="second-section-container"] button[class*="tool-button"]');
     var btn_last = btns[btns.length - 1];
-    btn_last.click();
-    document.querySelector('.lines-content.monaco-editor-background').style.backgroundColor = '#C7EDCC';
+    btn_last.click();//注释掉便关闭自动全屏
+    document.querySelector('.lines-content.monaco-editor-background').style.backgroundColor = '#C7EDCC';//此处修改16进制颜色，根据自己需要，默认为护眼豆沙色
 
 })
 	
